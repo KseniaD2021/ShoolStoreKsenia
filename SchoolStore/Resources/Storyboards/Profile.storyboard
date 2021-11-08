@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5mr-bL-cHE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Profile-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController title="Profile" id="Y6W-OH-hqX" customClass="ProfileVC" customModule="SchoolStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNe-RD-3h2" customClass="ProfileView" customModule="SchoolStore" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="88" width="414" height="166"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="166" id="sqv-ty-mpp"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ysE-i8-y6G">
+                                <rect key="frame" x="52" y="295" width="310" height="90"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tjp-RP-fff">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="Nlw-dN-sCG"/>
+                                            <constraint firstAttribute="width" constant="90" id="vnX-kX-91k"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" imagePlacement="top" subtitle="" imagePadding="0.0">
+                                            <imageReference key="image" image="car" catalog="system" symbolScale="medium" renderingMode="hierarchical-single"/>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content=" "/>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="historyPage:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eb8-aA-5hi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fKN-yy-az2">
+                                        <rect key="frame" x="110" y="0.0" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="8AW-dl-36m"/>
+                                            <constraint firstAttribute="width" constant="90" id="bbb-vo-Odr"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" imagePlacement="top" imagePadding="0.0">
+                                            <imageReference key="image" image="gearshape" catalog="system" symbolScale="medium" renderingMode="hierarchical-single"/>
+                                            <attributedString key="attributedTitle">
+                                                <fragment content=" "/>
+                                            </attributedString>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="EditProfilePressed:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="US6-cN-BRL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8hA-nE-Lt6">
+                                        <rect key="frame" x="220" y="0.0" width="90" height="90"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="90" id="8MR-LS-xaF"/>
+                                            <constraint firstAttribute="width" constant="90" id="V4R-c4-VZd"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" imagePlacement="top" title=" " subtitle="" imagePadding="0.0">
+                                            <imageReference key="image" image="arrow.right.to.line.alt" catalog="system" symbolScale="medium" renderingMode="hierarchical-single"/>
+                                            <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="logoutPressedButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="W88-TF-qVc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="90" id="OJC-Vm-I7r"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CNe-RD-3h2" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="EIX-PJ-Zgb"/>
+                            <constraint firstItem="CNe-RD-3h2" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="HBu-hQ-a6z"/>
+                            <constraint firstItem="ysE-i8-y6G" firstAttribute="top" secondItem="CNe-RD-3h2" secondAttribute="bottom" constant="41" id="OJ3-YU-7cI"/>
+                            <constraint firstItem="CNe-RD-3h2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="XPQ-XX-LUF"/>
+                            <constraint firstItem="ysE-i8-y6G" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="a8W-ux-Lse"/>
+                            <constraint firstItem="CNe-RD-3h2" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="cWR-Fc-nEk"/>
+                            <constraint firstItem="CNe-RD-3h2" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="ssq-E9-FLu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="FSw-1b-LUU"/>
+                    <connections>
+                        <outlet property="ExitBtn" destination="8hA-nE-Lt6" id="rdW-2M-Tf6"/>
+                        <outlet property="OrdersBtn" destination="Tjp-RP-fff" id="nXU-zb-ngD"/>
+                        <outlet property="ProfileView" destination="CNe-RD-3h2" id="gBi-tU-p1g"/>
+                        <outlet property="SettingsBtn" destination="fKN-yy-az2" id="Hvw-SE-cIb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000.0000000000001" y="94.419642857142847"/>
+        </scene>
+        <!--Profile-->
+        <scene sceneID="S9h-aC-aMx">
+            <objects>
+                <navigationController storyboardIdentifier="Profile" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="5mr-bL-cHE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Profile" image="person" catalog="system" id="rLr-Hj-CFp"/>
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OsB-gN-7PA">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="vse-HJ-JWY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Zn-1i-IqR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="94.419642857142847"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.right.to.line.alt" catalog="system" width="128" height="101"/>
+        <image name="car" catalog="system" width="128" height="93"/>
+        <image name="gearshape" catalog="system" width="128" height="121"/>
+        <image name="person" catalog="system" width="128" height="117"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
